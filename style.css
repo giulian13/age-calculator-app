@@ -1,0 +1,249 @@
+/* Reset default css styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+/* Rmove arrows from input type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 86%);
+  font-family: Poppins, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: auto;
+  height: 100vh;
+}
+
+.mainFrame {
+  height: auto;
+  width: auto;
+
+  background-color: hsl(0, 0%, 100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  border-radius: 25px 25px 200px 25px;
+}
+
+.inputFrame {
+  display: flex;
+
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+
+  margin-right: 30px;
+}
+
+.inputFrame p {
+  font-size: 0.75rem;
+}
+
+.dayOfBirth label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.dayOfBirth input {
+  font-size: 2rem;
+  font-weight: 700;
+
+  width: 150px;
+  height: 50px;
+
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 30px;
+
+  cursor: pointer;
+}
+
+.dayOfBirth input:focus {
+  outline-color: hsl(259, 100%, 65%);
+  border: 1px solid hsl(259, 100%, 65%);
+  caret-color: hsl(259, 100%, 65%);
+}
+
+.dayOfBirth {
+  color: hsl(0, 1%, 44%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+
+  padding: 40px 100px 30px 0;
+  margin: 20px 100px 0 50px;
+
+  border-bottom: solid hsl(0, 0%, 86%) 1px;
+}
+
+#submitButton {
+  background-color: hsl(259, 100%, 65%);
+
+  border-radius: 50%;
+
+  padding: 15px;
+
+  width: 90px;
+  height: 90px;
+
+  position: absolute;
+  bottom: -45px;
+  right: -45px;
+}
+
+#submitButton:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.ageResult {
+  color: hsl(0, 0%, 8%);
+  font-size: 4.25rem;
+  font-style: italic;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  margin: 10px 50px 20px 50px;
+}
+
+.ageResult span {
+  color: hsl(259, 100%, 65%);
+}
+
+.dayInputError {
+  color: red;
+  visibility: hidden;
+}
+
+.monthInputError {
+  color: red;
+  visibility: hidden;
+}
+
+.yearInputError {
+  color: red;
+  visibility: hidden;
+}
+
+@media (max-width: 780px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+  }
+
+  .mainFrame {
+    width: 95%;
+    height: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px 20px 100px 20px;
+  }
+
+  .dayOfBirth {
+    width: 100%;
+
+    padding: 0;
+    margin: 40px 0px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .inputFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0;
+    padding-bottom: 50px;
+  }
+
+  .inputFrame p {
+    font-size: 0.65rem;
+  }
+
+  .dayOfBirth label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+
+  .dayOfBirth input {
+    font-size: 1.4rem;
+
+    padding: 6px;
+    text-align: center;
+
+    width: 90px;
+    height: 50px;
+  }
+
+  .ageResult {
+    font-size: 2.5rem;
+
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  #submitButton {
+    width: 60px;
+    height: 60px;
+
+    position: absolute;
+    bottom: -30px;
+    right: 42%;
+  }
+
+  .dayInputError {
+    width: 76px;
+    text-align: center;
+  }
+
+  .monthInputError {
+    width: 76px;
+    text-align: center;
+  }
+
+  .yearInputError {
+    width: 76px;
+    text-align: center;
+  }
+}
