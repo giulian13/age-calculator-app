@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/a-nice-and-well-developed-age-calculator-BVggU5zXub)
+- Live Site URL: [Live site](https://funky-age-calc.netlify.app)
 
 ## My process
 
